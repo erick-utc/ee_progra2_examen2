@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Inicio.master.cs" Inherits="EE_Examen2_Progra2.Inicio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>EE Examen 2 Progra 2</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+               <div class="container-fluid">
+                 <a class="navbar-brand" href="#">Examen  2 Progra 2 Erick Espinoza</a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                   <div class="navbar-nav">
+                     <%--<a class="nav-link" href="#">Home</a>--%>
+                     <a class="nav-link" href="Usuarios.aspx">Usuarios</a>
+                     <a class="nav-link" href="Tecnicos.aspx">Tecnicos</a>
+                     <a class="nav-link" href="Equipos.aspx">Equipos</a>
+                   </div>
+                 </div>
+               </div>
+             </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+            </asp:ContentPlaceHolder>
+        </div>
+
+        
+    </form>
+</body>
+</html>
